@@ -162,8 +162,7 @@ img{
     text-align: center;
 }
 .profImg img{
-    width: 300px;
-    height: 300px;
+    width: 80%;
     border-radius: 100%;
 }
 
@@ -717,7 +716,7 @@ a.btn-custom01:hover:before {
     .about__bg{
         width: 100%;
         background-attachment: scroll;
-        /* background-image: url(img/SP-panda.png); */
+        background-image: url(img/SP-panda.png);
 
     }
 
@@ -733,6 +732,10 @@ a.btn-custom01:hover:before {
     .profImg{
         width: 100%;
         margin-bottom: 32px;
+    }
+
+    .profImg img{
+        width: 50%;
     }
 
     .about__myName{
