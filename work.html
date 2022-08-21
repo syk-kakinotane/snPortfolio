@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Oswald:wght@600&family=Tapestry&display=swap" rel="stylesheet">
+    <title>WORK-SAYAKA NAKAZAWA</title>
+</head>
+<body>
+    <header id="header">
+        <div class="header wrapper">
+            <h1 class="header__companyName">
+                <a href="index.html">SAYAKA NAKAZAWA</a>A
+            </h1>
+            <nav>
+                <ul class="pc-nav">
+                    <li><a class="pc-nav__item" href="index.html#about">ABOUT</a></li>
+                    <!-- <li><a class="pc-nav__item" href="#service">SERVICE</a></li> -->
+                    <li><a class="pc-nav__item" href="index.html#work">WORK</a></li>
+                    <li><a class="pc-nav__item" href="index.html#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="sp-menu">
+                <span class="sp-menu--open" id="open">MENU</span>
+            </div>
+    </header>
+    <div class="sp-menu overlay">
+        <span class="sp-menu--close" id="close">CLOSE</span>
+        <ul class="sp-nav">
+            <li><a class="sp-nav__item" href="index.html#about">ABOUT</a></li>
+            <!-- <li><a class="sp-nav__item" href="#service">SERVICE</a></li> -->
+            <li><a class="sp-nav__item" href="index.html#work">WORK</a></li>
+            <li><a class="sp-nav__item" href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </div>    
+
+    <main>
+        <section class="workList wrapper">
+            <div class="sectionTitle">WORK</div>
+            <div class="workContainer">
+                <div class="workItem1">
+                    <div class="workItem__example">
+                        <a href="furnitureDesign.html">
+                            <img  class="workItem__img" src="img/PCtop-furnitureDesign.png" alt="furnitureDesign">
+                            <div class="itemTitle jpText">
+                                Furniture Design
+                            </div>
+                            </a>
+                    </div>
+                    <div class="workItem__example">
+                        <a href="travelBlog.html">
+                            <img class="workItem__img" src="img/PCtop-travelBlog.png" alt="travelBlog">
+                            <div class="itemTitle jpText">
+                                Travel Blog
+                            </div>
+                            </a>
+                    </div>
+                    <div class="workItem__example">
+                        <a href="sayakaNakazawa.html">
+                            <img class="workItem__img" src="img/PCtop-SayakaN.png" alt="SNportfolio">
+                            <div class="itemTitle jpText">
+                                SAYAKA NAKAZAWA
+                            </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="workItem2">
+                    <div class="workItem__example">
+                        <a href="coffee.html">
+                            <img class="workItem__img" src="img/PCtop-coffee.png" alt="coffee">
+                            <div class="itemTitle jpText">
+                                COFFEE
+                            </div>
+                            </a>
+                    </div>
+                    <div class="workItem__example">
+                        <a href="sneakers.html">
+                            <img class="workItem__img" src="img/PCtop-sneakers.png" alt="sneakers">
+                            <div class="itemTitle jpText">
+                                Sneakers
+                            </div>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div id="topBtn" class="rotateBtn topBtn">
+                <a href="work.html">TOP</a>
+            </div>
+            
+        </section>
+        <section id="work__contact" class="contact">
+            <div class="contact__bg">
+                <div class="wrapper">
+                    <div id="contact" class="sectionTitle">CONTACT</div>
+                    <p class="jpText">お仕事のご依頼、ご相談などはお気軽にご連絡ください！</p>
+                </div>
+                <div class="contact__email">
+                    <a href="mailto:syknkzw@gmail.com?subject=WEB制作のお問い合わせ" class="btn btn-custom01">
+                        <span class="btn-custom01-front">syk.nkzw@gmail.com</span>
+                    </a>
+                </div>             
+                <p class="contact__scroll">If you have any requests or questions, 
+                    please do not hegitate to contact me.</p>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <p>&copy;SAYAKA NAKAZAWA</p>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        // top に行くボタンを消す
+        const topBtn = document.getElementById("topBtn");
+        const contact = document.getElementById("work__contact");
+        function callbackBtn(entriesBtn){
+            // alert(entriesBtn);
+            // console.log(entriesBtn);
+            if(entriesBtn[0].isIntersecting){
+                // alert(1);
+                topBtn.classList.add('remove');
+            } else {
+                topBtn.classList.remove('remove');
+            }
+        }
+
+        const optionsBtn = {
+        threshold: 0,
+        rootMargin: "0% 0% 0% 0%",
+        }
+
+        const observerBtn = new IntersectionObserver(callbackBtn, optionsBtn);
+        observerBtn.observe(contact);
+    </script>
+</body>
+</html>

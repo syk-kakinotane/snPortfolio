@@ -1,0 +1,819 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+.jpText{
+    font-family: 'Hiragino Sans';
+}
+
+.wrapper{
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sectionTitle{
+    color: #fff;
+    font-size: 4rem;
+    -webkit-text-stroke: 3px #333;
+    margin: 80px;
+    text-align: center;
+    letter-spacing: .2rem;
+    transition:3s
+}
+
+.changeColor{
+    color: #FBC500;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+    /* text-align:center;    */
+}
+
+.pc-nav{
+    display: flex;
+}
+
+.pc-nav__item{
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 8px;
+    padding: 8px 16px;
+    border: #333 solid 2px;
+    transition: .5s ;
+}
+
+.pc-nav__item:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+.sp-menu{
+    display: none;
+}
+
+/* --------------------------- TOP ---------------------------*/
+.top{
+    height: calc(100vh - 100px);
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.top__hello{
+    font-size: 4.5rem;
+    position: absolute;
+    top: 55%;
+    left: 18%;
+    color: #ccc;
+}
+
+.top__sayaka{
+    font-size: 2rem;
+    position: absolute;
+    left: calc(50% + 1rem);
+    top: 30%;
+    color: #333;
+}
+
+.top__designer{
+    font-size: 6rem;
+    position: absolute;
+    left: 50%;
+    /* left: 500px; */
+    top: 40%;
+    color: #333;
+    text-align: center;
+    line-height:0.9em;
+    animation: SlideIn 1.5s both;
+    animation-delay:2s
+}
+
+/* --------------------------- ABOUT ---------------------------*/
+
+.about__bg{
+    background-image: url(img/profile-bg.jpeg); 
+    position: relative;
+    height: auto;
+    background-position:left ;
+    width: 100%;
+    margin: auto;
+    margin-top: 80px;
+    background-size: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 95%);
+  }
+
+.about__bg--masked{
+    background-color: rgba(51, 51, 51, 1);
+    width: 100%;
+    padding: 0 15px 80px 15px;
+    color: #fff;
+    position:relative;
+    overflow: hidden;
+}
+
+
+
+.dark{
+    background-color: rgba(51, 51, 51, 0.7);
+    transition: 3s;
+}
+
+.about_container{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+/* .about__basicInfo{
+    width: 45%;
+    line-height: 1.5;
+    margin:50px auto;
+} */
+
+.about__myName{
+    margin-bottom: 32px;
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+}
+
+
+.about__basicInfo{
+    width: 60%;
+}
+.profImg{
+    width: 38%;
+    margin: auto;
+    text-align: center;
+}
+.profImg img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+
+
+.about__detailsTitle{
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+.about__detailsItem{
+    display: inline-block;
+    padding: 2px 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: solid  1px #fff;
+    font-family: 'Hiragino Sans';
+}
+
+.about__detailsTitle{
+    margin-top: 24px;
+}
+.about__moreAbout{
+    margin-top: 24px;
+}
+
+.about__moreList{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.about__more-title{
+    width: 30%;
+    font-family: 'Hiragino Sans';    
+}
+
+.about__more-text{
+    width: 70%;
+    padding-bottom: 8px;
+}
+
+.about__scroll{
+    color: #fff;
+    opacity: 0.4;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    white-space: nowrap;
+    animation: Scroll 12s linear infinite;
+}
+/* --------------------------- work ---------------------------*/
+.slider{
+    width:100%;
+}
+
+.slider__img{
+    margin: 0 10px;
+    border: #333 3px solid;
+    width:60vw;
+    height:auto;
+}
+.slider__img a:hover{
+    opacity: 0.5;
+}
+.slick-prev {
+    left: 0;
+    z-index: 1;
+}
+ 
+.slick-next {
+    right: 0;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-slide {
+    transition: .3s ease;
+    transform: scale(.8);
+  }
+  .slick-slide:not(.slick-current) {
+    opacity: .5;
+  }
+  .slick-current {
+    transform: scale(1);
+  }
+
+/* --------------------------- workListPage ---------------------------*/
+
+.workContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.workItem1{
+    width: 48%;
+}
+
+.workItem2{
+    width: 48%;
+    margin-top: 200px;
+
+}
+
+.workItem__example{
+    border: #333 solid 2px;
+    box-shadow: 0 10px 10px 0 rgba(000, 000, 000, 0.5);
+    padding: 16px;
+    margin-bottom: 48px;
+    transition: .5s ;
+}
+
+.workItem__example:hover{
+    background-color: #FBC500;
+}
+
+.workItem__img{
+    border: #333 solid 2px;
+}
+
+.itemTitle{
+    margin-top:16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.rotateBtn{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: #333;
+    text-align: center;
+    line-height: 80px;
+    margin: 40px auto;
+    border: #333 solid 2px;
+    transition: background-color 3s,transform 1s ;
+}
+
+.rotateBtn:hover{
+    
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    background-color: #FBC500;
+}
+
+.topBtn{
+    position: fixed;
+    bottom: 0;
+    right: 10%;
+    background-color: #fff;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+
+.topBtn.remove{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.workList{
+    margin-bottom: 80px;
+}
+
+
+/* --------------------------- CONTACT ---------------------------*/
+
+.contact__bg{
+    background-color: #333;
+    color: #fff;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.contact__bg p{
+    text-align: center;
+}
+
+.contact__form{
+    margin-top: 40px;
+}
+.contact__form dl{
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 18px;
+    padding: 8px;   
+}
+.contact__form dt{
+    margin-bottom: 8px;
+}
+
+.contact__form dd{
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 18px;
+    padding-left: 2px;
+    height: 32px;
+    border-radius: 10px;
+
+}
+.submit{
+    font-size: 1.5rem;
+    width:400px;
+    height:50px;
+    border: #fff 2px solid;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto 40px auto;
+}
+
+.contact__scroll{
+    width: 100%;
+    margin-top: 40px;
+    color: #fff;
+    opacity: 0.4;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    white-space: nowrap;
+    animation: Scroll 12s linear infinite;
+}
+
+.contact__email{
+    margin: 34px auto;
+    text-align: center;
+}
+
+/* --------------------------- FOOTER ---------------------------*/
+.footer{
+    background-color: #333;
+    color: #fff;
+    height: 100px;
+    font-size: .7rem;
+    text-align: center;
+    line-height: 100px;
+    border-top: rgb(255, 255, 255,.3) solid 0.5px;
+}
+
+
+
+@keyframes Scroll {
+    /* 0% {
+      transform: translateX(2000px);
+    }
+    100% {
+        transform: translateX(-1800px);
+    } */
+
+    0% { transform: translateX(100%)}
+    100% { transform: translateX(-120%)}
+  }
+  @keyframes SlideIn {
+    0% {
+      opacity: 0;/*初期状態では透明に*/
+      transform: translateX(1000px);
+    }
+    100% {
+          transform: translateX(0);
+    }
+    40%,100% {
+        opacity: 1;
+    }
+  }
+
+/* --------------------------- WORK Page ---------------------------*/
+.workPage-bg{
+    background-image: url(img/example1.png);
+    width: 100%;
+    background-position:top;
+    background-size: cover;
+    height: auto;
+    background-attachment: fixed;
+}
+
+.workPage-bg--masked{
+    background-color: rgba(255, 255, 255, .85);
+    width: 100%;
+    height: 100%;
+}
+
+.workPage__img{
+    text-align: center;
+}
+
+/* .workPage__title{
+    color: #FBC500;
+} */
+
+.workPage__contents{
+    margin-bottom: 80px;
+}
+
+.workPage__contents img{
+    width: 80%;
+}
+.workPage__desscription{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin-top: 40px;
+   
+}
+
+.backBtn{
+    margin-right: 0;
+}
+
+
+.workPage__desscriptio--title{
+    width: 30%;
+    background-color: #333;
+    border-radius: 20px;
+    color: #fff;
+    padding: 8px 16px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.workPage__desscriptio--text{
+    font-family: 'Hiragino Sans';
+    width: 50%;
+    border-bottom: solid 1px #333;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+}
+
+.workPage__desscriptio--link{
+    color: blue;
+    text-decoration: underline;
+}
+
+.workPage__desscriptio--link:hover{
+    color: #FBC500;
+}
+
+.workPage__desscriptio--link span{
+    transform: rotate(-45deg);
+    vertical-align: bottom;
+}
+
+
+
+/* -----------------------------------------------------------------------
+-------------------------------------------------------------------------
+---------------------------ボタン用ーーーーーーーーーーーーーーーーーーーーーーーーーー
+ -----------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+
+
+
+  *,
+*:before,
+*:after {
+  box-sizing: inherit; 
+}
+
+/* ↓【重要】ここ消すと変になる */
+html {
+  box-sizing: border-box;
+}
+
+.btn,
+a.btn,
+button.btn {
+ font-size: 1.2rem;  
+/*  font-weight: 700;
+  line-height: 1.5; */
+  position: relative;
+  display: inline-block;
+  /* padding: 1rem 5rem; */
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  /* border-radius: 0.5rem; */
+}
+
+a.btn-custom01 {
+  margin-bottom: 0.5rem;
+  padding: 0;
+  border-radius: 20px;
+}
+
+a.btn-custom01:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  transition: all 0.3s;
+  /* ↓立体の高さ調節してる */
+  transform: translate3d(0, 0.4rem, -1rem);
+
+  border: 2px solid #000;
+  border-radius: inherit;
+  background: #D2A500;
+}
+
+.btn-custom01-front {
+  position: relative;
+  display: block;
+  /* ↓【重要】ボタンのメインパートのpaddingぽい */
+  padding: 1rem 5rem;
+  transition: all 0.3s;
+  border: 2px solid #000;
+  border-radius: inherit;
+  background: #FBC500;
+}
+
+a.btn-custom01:hover {
+  transform: translate(0rem, 0.3rem);
+}
+
+a.btn-custom01:hover:before {
+  transform: translate3d(0, 0, -0.3rem);
+}
+
+.btn-custom01-front:active{
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+}
+
+
+
+/* -----------------------------------------------------------------------
+-------------------------------------------------------------------------
+---------------------------ボタンここまでーーーーーーーーーーーーーーーーーーーーーーーーーー
+ -----------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+
+    .wrapper{
+        max-width: 767px;
+    }
+
+    .pc-nav{
+        display: none;
+    }
+
+    .sp-menu{
+        display: block;
+        color: #fff;
+     } 
+
+    .header{
+        position: relative;
+    }
+
+    .sp-menu--open{
+    font-size: 0.8rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0 16px;
+    border: #333 solid 2px;
+    cursor: pointer;
+    }
+
+    .sp-menu--open:hover{
+        background-color: #fff;
+        color: #333;
+    }
+
+    .sp-menu--close{
+        font-size: 0.8rem;
+        background-color: #333;
+        color: #fff;
+        border-radius: 20px;
+        padding: 4px 16px;
+        border: #fff solid 2px;
+        cursor: pointer;
+        position: absolute;
+        top: 50px;
+        right: 16px;
+    }
+
+    .sp-menu--close:hover{
+        background-color: #fff;
+        color: #333;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        text-align: center;
+        padding: 64px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .6s;
+        width: 100vw;
+        height: 100vh;
+        z-index: 30;
+    }
+
+    .sp-nav{
+        margin: 64px;
+    }
+
+    .sp-nav li{
+        margin-top: 24px;
+    }
+
+    .sp-nav__item{
+        letter-spacing: 0.2rem;
+    }
+
+    .sp-nav__item:hover{
+        color: #FBC500;
+    }
+
+    .overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+    }
+    
+    .top__hello{
+        font-size: 2.5rem;
+        top: 60%;
+    }
+
+    .top__sayaka{
+        font-size: 1.5rem;
+        top: 50%;
+    }
+
+    .top__designer{
+        font-size: 3rem;
+        line-height:0.9em;
+        top: 55%;
+    }
+
+    .about__bg{
+        width: 100%;
+        background-attachment: scroll;
+        /* background-image: url(img/SP-panda.png); */
+
+    }
+
+    .about_container{
+        flex-direction: column;
+    }
+
+    /* .about__basicInfo{
+        width: 100%;
+        margin: 0 auto;
+    } */
+
+    .about__myName{
+        font-size: 1.5rem;
+
+    }
+
+    .about__details{
+        width: 100%;
+        margin-top: 32px;
+    }
+    
+    .about__moreList{
+        flex-direction: column;
+    }
+    .about__more-title{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .about__more-text{
+        width: 100%;
+    }
+
+    .rotateBtn{
+        width: 50px;
+        height: 50px;
+        line-height:50px;
+        font-size:0.9rem;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+
+    .sectionTitle{
+        margin: 40px;
+        font-size: 3rem;  
+        -webkit-text-stroke: 1.5px #333;
+    }
+    
+    .btn-custom01-front {
+        padding: 0.5rem 3rem;
+    }
+
+    .contact__bg{
+        padding-bottom: 40px;
+
+    }
+    .contact__scroll{
+        margin-top: 0;
+    }
+
+    .workContainer{
+        flex-direction: column;
+    }
+    .workItem1{
+        width: 100%;
+    }
+    .workItem2{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .workItem__example {
+        margin-bottom: 32px;
+    }
+
+    .workList{
+        margin-bottom: 40px;
+    }
+
+    .workPage__contents{
+        margin-bottom: 40px;
+
+    }
+
+    .workPage__desscription{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .workPage__desscriptio--title{
+        width: 40%;
+        margin-bottom: 0;
+    }
+    .workPage__desscriptio--text{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+}

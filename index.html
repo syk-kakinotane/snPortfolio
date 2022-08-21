@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <!-- Slick は自分のCSSの前で読み込む -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Oswald:wght@600&family=Tapestry&display=swap" rel="stylesheet">
+    <title>MENTA</title>
+</head>
+<body>
+    <header>
+        <div class="header wrapper">
+            <h1 class="header__companyName">
+                <a href="index.html">SAYAKA NAKAZAWA</a>
+            </h1>
+            <nav>
+                <ul class="pc-nav">
+                    <li><a class="pc-nav__item" href="#about">ABOUT</a></li>
+                    <!-- <li><a class="pc-nav__item" href="#service">SERVICE</a></li> -->
+                    <li><a class="pc-nav__item" href="#work">WORK</a></li>
+                    <li><a class="pc-nav__item" href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="sp-menu">
+                <span class="sp-menu--open" id="open">MENU</span>
+            </div>
+    </header>
+    <div class="sp-menu overlay">
+        <span class="sp-menu--close" id="close">CLOSE</span>
+        <ul class="sp-nav">
+            <li><a class="sp-nav__item" href="#about">ABOUT</a></li>
+            <!-- <li><a class="sp-nav__item" href="#service">SERVICE</a></li> -->
+            <li><a class="sp-nav__item" href="#work">WORK</a></li>
+            <li><a class="sp-nav__item" href="#contact">CONTACT</a></li>
+        </ul>
+    </div>    
+
+    <main>
+        <section class="top wrapper">
+                <p class="top__hello">Hello, World!</p>
+                <p id="typing" class="top__sayaka typing" data-speed="150">I'm Sayaka</p>
+                <p class="top__designer">Designer<br>and<br>Developer</p>
+        </section>
+        <section class="about">
+            <div class="about__bg">
+                <div id="mask" class="about__bg--masked">
+                    <div id="about" class="sectionTitle">ABOUT</div>
+                    <div class="about_container wrapper"> 
+                        <div class="about__basicInfo">
+                            <p class="about__myName">SAYAKA NAKAZAWA</p>                            </p>
+                            <p class="jpText profile__text">はじめまして！ポートフォリオをご覧頂きありがとうございます。
+                                2022年よりフリーランスのwebデザイナー兼webコーダーとして活動しております。
+                                主にLPサイト・企業サイト制作のお仕事を承っております。
+                            </p> 
+                            <p class="about__detailsTitle">WEB SKILLS</p>
+                            <span class="about__detailsItem">HTML</span>
+                            <span class="about__detailsItem">CSS</span>
+                            <span class="about__detailsItem">Javascript</span>
+                            <span class="about__detailsItem">Figma</span>
+                            <div class="about__moreAbout">
+                                <p class="about__detailsTitle">MORE ABOUT ME</p>
+                                <dl class="about__moreList">
+                                    <dt class="about__more-title">Qualifications</dt>
+                                    <dd class="about__more-text">
+                                        <span class="about__detailsItem">情報セキュリティマネジメント</span>
+                                        <span class="about__detailsItem">TOEIC 930点</span>
+                                        <span class="about__detailsItem">養護教諭一種免許状</span>  
+                                    </dd>
+                                    <dt class="about__more-title">Experience</dt>
+                                    <dd class="about__more-text">
+                                        <span class="about__detailsItem">ワーキングホリデー</span>
+                                        <span class="about__detailsItem">カナダ</span>
+                                    </dd>
+                                    <dt class="about__more-title">Like</dt>
+                                    <dd class="about__more-text">
+                                        <span class="about__detailsItem">ファッション</span>
+                                        <span class="about__detailsItem">お菓子</span>
+                                        <span class="about__detailsItem">パンダ</span>
+                                        <span class="about__detailsItem">散歩</span>
+                                        <span class="about__detailsItem">旅行</span>
+                                        
+                                        
+                                    </dd>
+                                </dl>
+                                
+                            </div>
+                        </div>
+                        <div class="profImg">
+                            <img src="img/profile.png" alt="profile">
+                        </div>
+                    </div>
+                        <!-- <p  class="about__scroll">
+                        Hi! Welcome to my portfolio:)  
+                        I am a web designer based in Japan!
+                        </p>                     -->
+                </div> 
+            </div>
+        </section>
+        <section class="work wrapper">
+            <div id="work" class="sectionTitle">WORK</div>
+            <div class="your-class">
+                <div class="slider__img">
+                    <a href="furnitureDesign.html"><img src="img/PCtop-furnitureDesign.png" alt="furnitureDesign"></a>
+                </div>
+                <div class="slider__img">
+                    <a href="coffee.html"><img src="img/PCtop-coffee.png" alt="coffee"></a>
+                </div>
+                <div class="slider__img">
+                    <a href="travelBlog.html"><img src="img/PCtop-travelBlog.png" alt="travelBlog"></a>
+                </div>
+                <div class="slider__img">
+                    <a href="sneakers.html"><img src="img/PCtop-sneakers.png" alt="sneakers"></a>
+                </div>
+                <div class="slider__img">
+                    <a href="sayakaNakazawa.html"><img src="img/PCtop-SayakaN.png" alt="SNportfolio"></a>
+                </div>
+
+              </div>
+            
+            <div class="rotateBtn">
+                <a href="work.html">MORE</a>
+            </div>
+            
+        </section>
+        <section class="contact">
+            <div class="contact__bg">
+                <div class="wrapper">
+                    <div>
+                        <div id="contact" class="sectionTitle">CONTACT</div>
+                        <p class="jpText">お仕事のご依頼、ご相談などはこちらのフォームからお気軽にご連絡ください！</p>
+                    </div>
+                    <div class="contact__form">
+                        <dl>
+                            <dt><label for="name">名前</label></dt>
+                            <dd><input id="name" type="text" name="name"></dd>
+                            <dt><label for="email">メールアドレス</label></dt>
+                            <dd><input id="email" type="text" name="email"></dd>
+                            <dt><label for="subject">件名</label></dt>
+                            <dd><input id="subject" type="text" name="email"></dd>
+                            <dt><label for="message">お問い合わせ内容</label></dt>
+                            <dd><input id="message" type="textarea" name="subject"></dd>
+                        </dl>
+                        <div class="submit">
+                            <input type="submit" value="送信" class="submitBtn">
+                        </div>
+                    </div>
+                    <p class="jpText">メールでのお問い合わせも可能です！</p>
+                </div>
+                
+                <div class="contact__email">
+                    <a href="mailto:syknkzw@gmail.com?subject=WEB制作のお問い合わせ" class="btn btn-custom01">
+                        <span class="btn-custom01-front">syk.nkzw@gmail.com</span>
+                    </a>
+                </div>             
+                <p class="contact__scroll">If you have any requests or questions, 
+                    please do not hegitate to contact me.</p>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <p>&copy;SAYAKA NAKAZAWA</p>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="main.js"></script>
+    <script>    
+        // パンダの色を変える
+        const mask = document.getElementById("mask");
+        function callbackPanda(entriesPanda){
+            // alert(1)
+            // アクセス時にcallback関数が呼ばれるのを防ぐ
+            if(entriesPanda[0].isIntersecting){ 
+                entriesPanda[0].target.classList.add('dark');
+                
+            // alert(0)
+            }
+        }
+
+        const optionsPanda = {
+        threshold: 0,
+        rootMargin: "0% 0% -70% 0%",
+        };
+
+        const observerPanda = new IntersectionObserver(callbackPanda, optionsPanda);
+        observerPanda.observe(mask);
+
+
+        //slick
+        $(document).ready(function(){
+            $('.your-class').slick({
+                autoplay: true,
+                centerMode: true,
+                slidesToScroll: 1,
+                dots: true,
+                arrows:true,
+                centerPadding:"150px",
+                adaptiveHeight:true,
+                autoplaySpeed:1500,
+                responsive: [
+                    {
+                        breakpoint: 600, 
+                        settings: {
+                            centerMode: false,
+                        },
+                    },
+                    ],
+                });
+            });
+    </script>  
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Oswald:wght@600&family=Tapestry&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Furniture Design-Sayaka Nakazawa</title>
+</head>
+<body>
+    <header>
+        <div class="header wrapper">
+            <h1 class="header__companyName">
+                <a href="index.html">SAYAKA NAKAZAWA</a>
+            </h1>
+            <nav>
+                <ul class="pc-nav">
+                    <li><a class="pc-nav__item" href="index.html#about">ABOUT</a></li>
+                    <!-- <li><a class="pc-nav__item" href="#service">SERVICE</a></li> -->
+                    <li><a class="pc-nav__item" href="index.html#work">WORK</a></li>
+                    <li><a class="pc-nav__item" href="index.html#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="sp-menu">
+                <span class="sp-menu--open" id="open">MENU</span>
+            </div>
+    </header>
+    <div class="sp-menu overlay">
+        <span class="sp-menu--close" id="close">CLOSE</span>
+        <ul class="sp-nav">
+            <li><a class="sp-nav__item" href="index.html#about">ABOUT</a></li>
+            <!-- <li><a class="sp-nav__item" href="#service">SERVICE</a></li> -->
+            <li><a class="sp-nav__item" href="index.html#work">WORK</a></li>
+            <li><a class="sp-nav__item" href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </div> 
+    <main>
+        <div class="sectionTitle workPage__title">WORK</div>
+        <div class="wrapper workPage__contents">
+            <div class="workPage__img">
+                <img src="img/PCSP-furnitureDesign.png" alt="main">
+            </div>
+            <dl class="workPage__desscription">
+                <dt class="workPage__desscriptio--title">NAME</dt>
+                <dd class="workPage__desscriptio--text">Furniture Design</dd>
+                <dt class="workPage__desscriptio--title">URL</dt>
+                <dd class="workPage__desscriptio--text workPage__desscriptio--link">
+                    <a href="https://syk-kakinotane.github.io/Interior-store/">
+                        https://syk-kakinotane.github.io/Interior-store/
+                        <span class="material-symbols-outlined">link</span>
+                    </a> 
+                </dd>
+                <dt class="workPage__desscriptio--title">SKILLS</dt>
+                <dd class="workPage__desscriptio--text">HTML/ CSS/ JavaScript</dd>
+                <dt class="workPage__desscriptio--title">ROLL</dt>
+                <dd class="workPage__desscriptio--text">コーディング</dd>
+                <dt class="workPage__desscriptio--title">SUMMARY</dt>
+                <dd class="workPage__desscriptio--text">学習サイトのものです。</dd>
+            </dl>
+            <div class="rotateBtn backBtn">
+                <a href="work.html">BACK</a>
+            </div>
+        </div>
+    </main>
+    <section class="contact">
+        <div class="contact__bg">
+            <div class="wrapper">
+                <div id="contact" class="sectionTitle workPage__title">CONTACT</div>
+                <p class="jpText">お仕事のご依頼、ご相談などはお気軽にご連絡ください！</p>
+            </div>
+            <div class="contact__email">
+                <a href="mailto:syknkzw@gmail.com?subject=WEB制作のお問い合わせ" class="btn btn-custom01">
+                    <span class="btn-custom01-front">syk.nkzw@gmail.com</span>
+                </a>
+            </div>
+            
+            <p class="contact__scroll">If you have any requests or questions, please do not hegitate to contact me.</p>
+
+        </div>
+    </section>
+</main>
+<div class="footer">
+    <p>&copy;SAYAKA NAKAZAWA</p>
+</div>
+<script src="main.js"></script>   
+</body>
+</html>
